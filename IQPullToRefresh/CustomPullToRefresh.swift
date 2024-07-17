@@ -7,13 +7,13 @@
 
 import UIKit
 
-class CustomPullToRefresh: UIView, IQAnimatableRefresh {
+public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
 
-    var refreshLength: CGFloat {
+    public var refreshLength: CGFloat {
         return 80
     }
 
-    var refreshState: IQAnimatableRefreshState = .unknown {
+    public var refreshState: IQAnimatableRefreshState = .unknown {
         didSet {
             guard refreshState != oldValue else {
                 return
@@ -107,7 +107,7 @@ class CustomPullToRefresh: UIView, IQAnimatableRefresh {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override var intrinsicContentSize: CGSize {
+    public override var intrinsicContentSize: CGSize {
         var intrinsicContentSize = super.intrinsicContentSize
         intrinsicContentSize.height = refreshLength
         return intrinsicContentSize
