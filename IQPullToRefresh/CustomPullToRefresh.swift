@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import IQPullToRefresh
 
-public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
+class CustomPullToRefresh: UIView, IQAnimatableRefresh {
 
     var refreshLength: CGFloat {
         return 80
