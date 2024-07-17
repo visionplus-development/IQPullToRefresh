@@ -33,7 +33,7 @@ public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
                     self?.alpha = 1
                     self?.transform = .init(translationX: 0, y: (frame.height * progress) - frame.height)
 
-                    let color = UIColor(red: 7, green: 227, blue: 208, alpha: 1)
+                    let color = UIColor(red: 7/255, green: 227/255, blue: 208/255, alpha: 1.0)
 
                     self?.imageView.tintColor = color
                     self?.imageView.isHidden = false
@@ -48,7 +48,7 @@ public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
                     self?.alpha = 1
                     self?.transform = .identity
 
-                    let color = UIColor(red: 7, green: 227, blue: 208, alpha: 1)
+                    let color = UIColor(red: 7/255, green: 227/255, blue: 208/255, alpha: 1.0)
 
                     self?.imageView.tintColor = color
                     self?.imageView.isHidden = false
@@ -64,7 +64,7 @@ public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
                     self?.alpha = 1
                     self?.transform = .identity
 
-                    let color = UIColor(red: 7, green: 227, blue: 208, alpha: 1)
+                    let color = UIColor(red: 7/255, green: 227/255, blue: 208/255, alpha: 1.0)
 
                     self?.activityIndicatorView.color = color
 
