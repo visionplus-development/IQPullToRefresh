@@ -60,8 +60,8 @@ public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
                 }, completion: nil)
 
             case .refreshing:
-                UIView.animate(withDuration: 0.2, animations: { [weak self] in
-                    self?.alpha = 1
+                UIView.animate(withDuration: 0.5, animations: { [weak self] in
+                    self?.alpha = 0.8
                     self?.transform = .identity
 
                     let color = UIColor(red: 7/255, green: 227/255, blue: 208/255, alpha: 1.0)
