@@ -22,9 +22,10 @@ public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
             switch refreshState {
             case .unknown, .none:
                 let frame = self.frame
-                UIView.animate(withDuration: 0.2, animations: { [weak self] in
+                UIView.animate(withDuration: 0.1, animations: { [weak self] in
                     self?.alpha = 0
-                    self?.transform = .init(translationX: 0, y: -frame.height)
+//                    self?.transform = .init(translationX: 0, y: -frame.height)
+                    self?.transform = .init(translationX: 0, y: 0)
                 }, completion: nil)
                 activityIndicatorView.stopAnimating()
             case .pulling(let progress):

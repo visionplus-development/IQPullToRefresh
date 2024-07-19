@@ -40,8 +40,8 @@ class UsersViewController: UITableViewController {
 
         refresher.enablePullToRefresh = true
 
-//        let customPullToRefresh = CustomPullToRefresh()
-//        refresher.refreshControl = customPullToRefresh
+        let customPullToRefresh = CustomPullToRefresh()
+        refresher.refreshControl = customPullToRefresh
 
 //        let soupPullToRefresh = SoupView.soapView()
 //        refresher.refreshControl = soupPullToRefresh
