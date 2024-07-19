@@ -39,7 +39,7 @@ public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
                     self?.imageView.isHidden = false
                     self?.imageView.transform = .init(rotationAngle: CGFloat.pi * progress)
 
-                    self?.label.text = "Pull to refresh"
+//                    self?.label.text = "Pull to refresh"
                     self?.label.textColor = color
 
                 }, completion: nil)
@@ -54,7 +54,7 @@ public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
                     self?.imageView.isHidden = false
                     self?.imageView.transform = .init(rotationAngle: .pi)
 
-                    self?.label.text = "Release to refresh"
+//                    self?.label.text = "Release to refresh"
                     self?.label.textColor = color
 
                 }, completion: nil)
