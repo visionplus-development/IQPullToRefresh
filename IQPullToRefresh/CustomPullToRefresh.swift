@@ -60,11 +60,11 @@ public class CustomPullToRefresh: UIView, IQAnimatableRefresh {
                 }, completion: nil)
 
             case .refreshing:
-                UIView.animate(withDuration: 0.5, animations: { [weak self] in
-                    self?.alpha = 0.8
+                UIView.animate(withDuration: 0.1, animations: { [weak self] in
+                    self?.alpha = 0.5
                     self?.transform = .identity
 
-                    let color = UIColor(red: 7/255, green: 227/255, blue: 208/255, alpha: 1.0)
+                    let color = UIColor(red: 7/255, green: 227/255, blue: 208/255, alpha: 0.8)
 
                     self?.activityIndicatorView.color = color
 
